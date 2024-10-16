@@ -15,13 +15,7 @@ export const ChatWrapper = ({sessionId, initialMessages}: {sessionId: string, in
         <div className="flex-1 text-black bg-zinc-800 flex justify-between flex-col">
             <Messages messages={messages}/>
         </div>
-        <ChatInput 
-            input={input} 
-            handleInputChange={handleInputChange} 
-            handleSubmit={handleSubmit} 
-            setInput={setInput}  
-            lastMessage={messages[messages.length - 1]?.content || ''} 
-        />
+        <ChatInput input={input} handleInputChange={handleInputChange} handleSubmit={handleSubmit} setInput={setInput} />
     </div>
   )
 };
