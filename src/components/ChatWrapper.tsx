@@ -19,8 +19,7 @@ export const ChatWrapper = ({sessionId, initialMessages}: {sessionId: string, in
             input={input} 
             handleInputChange={handleInputChange} 
             handleSubmit={handleSubmit} 
-            setInput={setInput}  
-            lastMessage={messages[messages.length - 1]?.content || ''} 
+            setInput={setInput}
         />
     </div>
   )
