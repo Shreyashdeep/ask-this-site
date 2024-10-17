@@ -33,7 +33,7 @@ export const ChatInput = ({ handleInputChange, handleSubmit, input, setInput }: 
               }
             }}
             placeholder="Enter your question..."
-            className="resize-none bg-zinc-800 hover:bg-zinc-800 focus:bg-zinc-800 rounded-t-xl text-base text-white border-t border-x w-full placeholder-gray-400"
+            className="resize-none bg-zinc-800 hover:bg-zinc-800 focus:bg-zinc-800 rounded-t-xl text-base text-black border-t border-x w-full placeholder-gray-500"
           />
 
           <Button
