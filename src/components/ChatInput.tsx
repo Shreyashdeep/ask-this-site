@@ -23,7 +23,7 @@ export const ChatInput = ({ handleInputChange, handleSubmit, input, setInput }: 
           <div className="relative flex flex-col w-full flex-grow p-4">
             <form onSubmit={handleSubmit} className="relative">
               <Textarea
-                minRows={4}
+                minRows={1}
                 autoFocus
                 onChange={handleInputChange}
                 value={input}
@@ -35,7 +35,7 @@ export const ChatInput = ({ handleInputChange, handleSubmit, input, setInput }: 
                   }
                 }}
                 placeholder="Enter your question..."
-                className="resize-none bg-zinc-800 hover:bg-zinc-900 rounded-xl text-base"
+                className="resize-none bg-zinc-800 hover:bg-zinc-800 focus:bg-zinc-800 rounded-xl text-base text-white border"
               />
 
               <Button

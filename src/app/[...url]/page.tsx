@@ -1,5 +1,5 @@
 import { ChatWrapper } from "@/components/ChatWrapper";
-import {ragChat} from "@/lib/rag-chat";
+import { ragChat } from "@/lib/rag-chat";
 import { redis } from "@/lib/redis";
 import { cookies } from "next/headers";
 
@@ -31,7 +31,11 @@ const Page = async ({params}: PageProps) => {
 
     await redis.sadd("indexed-urls", reconstructedUrl);
   }
-  return <ChatWrapper sessionId={sessionId} initialMessages={initialMessages} />
- }
+  return (
+    <div className="relative">
+      <ChatWrapper sessionId={sessionId} initialMessages={initialMessages} />
+    </div>
+  );
+}
 
 export default Page;
