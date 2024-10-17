@@ -17,7 +17,7 @@ interface ChatInputProps {
 
 export const ChatInput = ({ handleInputChange, handleSubmit, input, setInput }: ChatInputProps) => {
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-zinc-900 p-4">
+    <div className="fixed bottom-0 left-0 w-full">
       <div className="mx-auto max-w-3xl">
         <form onSubmit={handleSubmit} className="relative">
           <Textarea
@@ -33,7 +33,7 @@ export const ChatInput = ({ handleInputChange, handleSubmit, input, setInput }: 
               }
             }}
             placeholder="Enter your question..."
-            className="resize-none bg-zinc-800 hover:bg-zinc-800 focus:bg-zinc-800 rounded-xl text-base text-black border w-full placeholder-gray-500"
+            className="resize-none bg-zinc-800 hover:bg-zinc-800 focus:bg-zinc-800 rounded-t-xl text-base text-white border-t border-x w-full placeholder-gray-400"
           />
 
           <Button
