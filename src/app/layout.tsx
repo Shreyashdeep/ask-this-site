@@ -21,7 +21,7 @@ export default function RootLayout({
         className={cn(inter.className, "min-h-screen antialiased")}
       >
         <Providers>
-        <main className="h-screen dark text-foreground bg-background">
+        <main className="h-screen white text-foreground bg-background">
           {children}
         </main>
         </Providers>
