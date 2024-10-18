@@ -8,7 +8,7 @@ interface MessagesProps {
 
 export const Messages = ({messages}: MessagesProps) => {
     return (
-        <div className="flex max-h-[calc(90vh)]  mb-16 flex-1 flex-col overflow-y-auto">
+        <div className="flex max-h-[calc(90vh)]   flex-1 flex-col overflow-y-auto">
             {messages.length ? messages.map((message, i) => (
                 <Message key={i} content={message.content} isUserMessage={message.role === "user"}/>
             )): (<div className="flex-1 flex flex-col items-center justify-center gap-2">
